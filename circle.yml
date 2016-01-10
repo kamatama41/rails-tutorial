@@ -1,6 +1,11 @@
+machine:
+  ruby:
+    version: 2.2.3
+
 test:
   override:
-    - echo Skipped
+    - ./test.sh
+
 deployment:
   hello_app:
     branch: release/hello_app
