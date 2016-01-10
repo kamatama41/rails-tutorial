@@ -1,0 +1,9 @@
+test:
+  override:
+    - echo Skipped
+deployment:
+  hello_app:
+    branch: hello_app
+    commands:
+      - ./deploy.sh hello_app kamatama-rails-tutorial-hello:
+          timeout: 600
