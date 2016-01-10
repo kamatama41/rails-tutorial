@@ -7,5 +7,7 @@ deployment:
     commands:
       - ./deploy.sh hello_app kamatama-rails-tutorial-hello:
           timeout: 600
+    branch: release/toy_app
+    commands:
       - ./deploy.sh toy_app kamatama-rails-tutorial-toy:
           timeout: 600
