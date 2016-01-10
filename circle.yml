@@ -18,5 +18,5 @@ deployment:
           timeout: 600
     branch: release/sample_app
     commands:
-      - ./deploy.sh toy_app kamatama-rails-tutorial-sample:
+      - ./deploy.sh sample_app kamatama-rails-tutorial-sample:
           timeout: 600
