@@ -36,3 +36,7 @@ bower.json
 .powenv
 
 # Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ IDEA
+.idea
+**.iml
