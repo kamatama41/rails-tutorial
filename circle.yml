@@ -1,6 +1,11 @@
+machine:
+  ruby:
+    version: 2.2.3
+
 test:
   override:
-    - echo Skipped
+    - ./test.sh
+
 deployment:
   hello_app:
     branch: release/hello_app
@@ -10,4 +15,8 @@ deployment:
     branch: release/toy_app
     commands:
       - ./deploy.sh toy_app kamatama-rails-tutorial-toy:
+          timeout: 600
+    branch: release/sample_app
+    commands:
+      - ./deploy.sh toy_app kamatama-rails-tutorial-sample:
           timeout: 600
